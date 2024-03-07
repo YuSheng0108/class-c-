@@ -28,23 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.justbutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.abcde = new System.Windows.Forms.Button();
+            this.btnBMI = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // justbutton
             // 
-            this.button1.Location = new System.Drawing.Point(563, 252);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 172);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "只是按鈕";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.justbutton.Font = new System.Drawing.Font("新細明體", 18F);
+            this.justbutton.Location = new System.Drawing.Point(563, 252);
+            this.justbutton.Name = "justbutton";
+            this.justbutton.Size = new System.Drawing.Size(167, 172);
+            this.justbutton.TabIndex = 0;
+            this.justbutton.Text = "只是按鈕";
+            this.justbutton.UseVisualStyleBackColor = true;
+            this.justbutton.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -96,23 +99,44 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("標楷體", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.Coral;
-            this.label3.Location = new System.Drawing.Point(593, 37);
+            this.label3.Location = new System.Drawing.Point(556, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 40);
+            this.label3.Size = new System.Drawing.Size(206, 40);
             this.label3.TabIndex = 5;
-            this.label3.Text = "你是誰";
+            this.label3.Text = "N09310012";
+            // 
+            // abcde
+            // 
+            this.abcde.Location = new System.Drawing.Point(658, 174);
+            this.abcde.Name = "abcde";
+            this.abcde.Size = new System.Drawing.Size(75, 23);
+            this.abcde.TabIndex = 6;
+            this.abcde.Text = "請按我一下";
+            this.abcde.UseVisualStyleBackColor = true;
+            this.abcde.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnBMI
+            // 
+            this.btnBMI.Location = new System.Drawing.Point(563, 174);
+            this.btnBMI.Name = "btnBMI";
+            this.btnBMI.Size = new System.Drawing.Size(75, 23);
+            this.btnBMI.TabIndex = 7;
+            this.btnBMI.Text = "btnBMI";
+            this.btnBMI.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBMI);
+            this.Controls.Add(this.abcde);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.justbutton);
             this.Name = "Form1";
             this.Text = "我只是個視窗";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -123,12 +147,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button justbutton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button abcde;
+        private System.Windows.Forms.Button btnBMI;
     }
 }
 

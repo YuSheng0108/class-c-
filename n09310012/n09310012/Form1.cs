@@ -24,12 +24,16 @@ namespace n09310012
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (abcde.Text == "請按我一下")
+                abcde.Text = "我已經被按過了";
 
+            else if (abcde.Text == "我已經被按過了")
+                abcde.Text = "請按我一下";
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
