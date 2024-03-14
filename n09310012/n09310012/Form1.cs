@@ -69,5 +69,11 @@ namespace n09310012
             int width = HW10.Width;
             HW10.Size = new Size(height + 10, height + 10);
         }
+
+        private void cher_Click(object sender, EventArgs e)
+        {
+            Form cher = new ckr();
+            cher.Show();
+        }
     }
 }

@@ -39,6 +39,7 @@
             this.number = new System.Windows.Forms.Label();
             this.puls1 = new System.Windows.Forms.Button();
             this.HW10 = new System.Windows.Forms.Button();
+            this.cher = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -157,11 +158,22 @@
             this.HW10.UseVisualStyleBackColor = true;
             this.HW10.Click += new System.EventHandler(this.HW10_Click);
             // 
+            // cher
+            // 
+            this.cher.Location = new System.Drawing.Point(587, 175);
+            this.cher.Name = "cher";
+            this.cher.Size = new System.Drawing.Size(75, 23);
+            this.cher.TabIndex = 12;
+            this.cher.Text = "彈出";
+            this.cher.UseVisualStyleBackColor = true;
+            this.cher.Click += new System.EventHandler(this.cher_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cher);
             this.Controls.Add(this.HW10);
             this.Controls.Add(this.puls1);
             this.Controls.Add(this.number);
@@ -193,6 +205,7 @@
         private System.Windows.Forms.Label number;
         private System.Windows.Forms.Button puls1;
         private System.Windows.Forms.Button HW10;
+        private System.Windows.Forms.Button cher;
     }
 }
 
