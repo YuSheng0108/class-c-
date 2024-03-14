@@ -28,26 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.justbutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.abcde = new System.Windows.Forms.Button();
             this.btnBMI = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.abcde = new System.Windows.Forms.Button();
+            this.number = new System.Windows.Forms.Label();
+            this.puls1 = new System.Windows.Forms.Button();
+            this.HW10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // justbutton
-            // 
-            this.justbutton.Font = new System.Drawing.Font("新細明體", 18F);
-            this.justbutton.Location = new System.Drawing.Point(563, 252);
-            this.justbutton.Name = "justbutton";
-            this.justbutton.Size = new System.Drawing.Size(167, 172);
-            this.justbutton.TabIndex = 0;
-            this.justbutton.Text = "只是按鈕";
-            this.justbutton.UseVisualStyleBackColor = true;
-            this.justbutton.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -64,7 +56,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(97, 230);
+            this.checkBox1.Location = new System.Drawing.Point(19, 132);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox1.Size = new System.Drawing.Size(54, 16);
@@ -75,7 +67,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(97, 252);
+            this.checkBox2.Location = new System.Drawing.Point(19, 154);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(77, 16);
             this.checkBox2.TabIndex = 3;
@@ -105,30 +97,75 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "N09310012";
             // 
-            // abcde
-            // 
-            this.abcde.Location = new System.Drawing.Point(658, 174);
-            this.abcde.Name = "abcde";
-            this.abcde.Size = new System.Drawing.Size(75, 23);
-            this.abcde.TabIndex = 6;
-            this.abcde.Text = "請按我一下";
-            this.abcde.UseVisualStyleBackColor = true;
-            this.abcde.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnBMI
             // 
-            this.btnBMI.Location = new System.Drawing.Point(563, 174);
+            this.btnBMI.Location = new System.Drawing.Point(19, 176);
             this.btnBMI.Name = "btnBMI";
             this.btnBMI.Size = new System.Drawing.Size(75, 23);
             this.btnBMI.TabIndex = 7;
             this.btnBMI.Text = "btnBMI";
             this.btnBMI.UseVisualStyleBackColor = true;
+            this.btnBMI.Click += new System.EventHandler(this.btnBMI_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(155, 161);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "請按我一下";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // abcde
+            // 
+            this.abcde.Location = new System.Drawing.Point(145, 176);
+            this.abcde.Name = "abcde";
+            this.abcde.Size = new System.Drawing.Size(75, 23);
+            this.abcde.TabIndex = 6;
+            this.abcde.Text = "請按我一下";
+            this.abcde.UseVisualStyleBackColor = true;
+            this.abcde.Click += new System.EventHandler(this.abcde_Click);
+            // 
+            // number
+            // 
+            this.number.AutoSize = true;
+            this.number.Location = new System.Drawing.Point(268, 161);
+            this.number.Name = "number";
+            this.number.Size = new System.Drawing.Size(11, 12);
+            this.number.TabIndex = 9;
+            this.number.Text = "0";
+            this.number.Click += new System.EventHandler(this.number_Click);
+            // 
+            // puls1
+            // 
+            this.puls1.Location = new System.Drawing.Point(240, 176);
+            this.puls1.Name = "puls1";
+            this.puls1.Size = new System.Drawing.Size(75, 23);
+            this.puls1.TabIndex = 10;
+            this.puls1.Text = "+1";
+            this.puls1.UseVisualStyleBackColor = true;
+            this.puls1.Click += new System.EventHandler(this.puls1_Click);
+            // 
+            // HW10
+            // 
+            this.HW10.Location = new System.Drawing.Point(361, 176);
+            this.HW10.Name = "HW10";
+            this.HW10.Size = new System.Drawing.Size(75, 23);
+            this.HW10.TabIndex = 11;
+            this.HW10.Text = "增加長寬10";
+            this.HW10.UseVisualStyleBackColor = true;
+            this.HW10.Click += new System.EventHandler(this.HW10_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.HW10);
+            this.Controls.Add(this.puls1);
+            this.Controls.Add(this.number);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnBMI);
             this.Controls.Add(this.abcde);
             this.Controls.Add(this.label3);
@@ -136,7 +173,6 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.justbutton);
             this.Name = "Form1";
             this.Text = "我只是個視窗";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -146,15 +182,17 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button justbutton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button abcde;
         private System.Windows.Forms.Button btnBMI;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button abcde;
+        private System.Windows.Forms.Label number;
+        private System.Windows.Forms.Button puls1;
+        private System.Windows.Forms.Button HW10;
     }
 }
 

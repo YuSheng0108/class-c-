@@ -22,13 +22,13 @@ namespace n09310012
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void abcde_Click(object sender, EventArgs e)
         {
-            if (abcde.Text == "請按我一下")
-                abcde.Text = "我已經被按過了";
+            if (label4.Text == "請按我一下")
+                label4.Text = "我已經被按過了";
 
-            else if (abcde.Text == "我已經被按過了")
-                abcde.Text = "請按我一下";
+            else if (label4.Text == "我已經被按過了")
+                label4.Text = "請按我一下";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,6 +39,35 @@ namespace n09310012
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void puls1_Click(object sender, EventArgs e)
+        {
+            String count = number.Text;
+            int sum = Int32.Parse(count)+1;
+            number.Text = sum.ToString();
+        }
+
+        private void number_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBMI_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void HW10_Click(object sender, EventArgs e)
+        {
+            int height = HW10.Height;
+            int width = HW10.Width;
+            HW10.Size = new Size(height + 10, height + 10);
         }
     }
 }
