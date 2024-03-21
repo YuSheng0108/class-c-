@@ -22,5 +22,10 @@ namespace n09310012
             Form zoo = new Form1();
             zoo.Show();
         }
+
+        private void cs1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

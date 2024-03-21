@@ -40,6 +40,7 @@
             this.puls1 = new System.Windows.Forms.Button();
             this.HW10 = new System.Windows.Forms.Button();
             this.cher = new System.Windows.Forms.Button();
+            this.m1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -168,11 +169,22 @@
             this.cher.UseVisualStyleBackColor = true;
             this.cher.Click += new System.EventHandler(this.cher_Click);
             // 
+            // m1
+            // 
+            this.m1.Location = new System.Drawing.Point(240, 205);
+            this.m1.Name = "m1";
+            this.m1.Size = new System.Drawing.Size(75, 23);
+            this.m1.TabIndex = 13;
+            this.m1.Text = "-1";
+            this.m1.UseVisualStyleBackColor = true;
+            this.m1.Click += new System.EventHandler(this.m1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.m1);
             this.Controls.Add(this.cher);
             this.Controls.Add(this.HW10);
             this.Controls.Add(this.puls1);
@@ -206,6 +218,7 @@
         private System.Windows.Forms.Button puls1;
         private System.Windows.Forms.Button HW10;
         private System.Windows.Forms.Button cher;
+        private System.Windows.Forms.Button m1;
     }
 }
 

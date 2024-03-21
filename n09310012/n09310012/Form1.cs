@@ -75,5 +75,12 @@ namespace n09310012
             Form cher = new ckr();
             cher.Show();
         }
+
+        private void m1_Click(object sender, EventArgs e)
+        {
+            String count = number.Text;
+            int sum = Int32.Parse(count) - 1;
+            number.Text = sum.ToString();
+        }
     }
 }
