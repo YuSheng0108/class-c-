@@ -82,5 +82,11 @@ namespace n09310012
             int sum = Int32.Parse(count) - 1;
             number.Text = sum.ToString();
         }
+
+        private void count_Click(object sender, EventArgs e)
+        {
+            Form cher = new text32();
+            cher.Show();
+        }
     }
 }

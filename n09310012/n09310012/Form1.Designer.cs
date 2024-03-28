@@ -41,6 +41,7 @@
             this.HW10 = new System.Windows.Forms.Button();
             this.cher = new System.Windows.Forms.Button();
             this.m1 = new System.Windows.Forms.Button();
+            this.count = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -179,11 +180,22 @@
             this.m1.UseVisualStyleBackColor = true;
             this.m1.Click += new System.EventHandler(this.m1_Click);
             // 
+            // count
+            // 
+            this.count.Location = new System.Drawing.Point(587, 256);
+            this.count.Name = "count";
+            this.count.Size = new System.Drawing.Size(75, 23);
+            this.count.TabIndex = 14;
+            this.count.Text = "加減";
+            this.count.UseVisualStyleBackColor = true;
+            this.count.Click += new System.EventHandler(this.count_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.count);
             this.Controls.Add(this.m1);
             this.Controls.Add(this.cher);
             this.Controls.Add(this.HW10);
@@ -219,6 +231,7 @@
         private System.Windows.Forms.Button HW10;
         private System.Windows.Forms.Button cher;
         private System.Windows.Forms.Button m1;
+        private System.Windows.Forms.Button count;
     }
 }
 
