@@ -88,5 +88,11 @@ namespace n09310012
             Form cher = new text32();
             cher.Show();
         }
+
+        private void mid_Click(object sender, EventArgs e)
+        {
+            Form mid = new midtest();
+            mid.Show();
+        }
     }
 }

@@ -42,6 +42,7 @@
             this.cher = new System.Windows.Forms.Button();
             this.m1 = new System.Windows.Forms.Button();
             this.count = new System.Windows.Forms.Button();
+            this.mid = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -190,11 +191,22 @@
             this.count.UseVisualStyleBackColor = true;
             this.count.Click += new System.EventHandler(this.count_Click);
             // 
+            // mid
+            // 
+            this.mid.Location = new System.Drawing.Point(158, 352);
+            this.mid.Name = "mid";
+            this.mid.Size = new System.Drawing.Size(121, 30);
+            this.mid.TabIndex = 15;
+            this.mid.Text = "期中考-攝氏轉華氏";
+            this.mid.UseVisualStyleBackColor = true;
+            this.mid.Click += new System.EventHandler(this.mid_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mid);
             this.Controls.Add(this.count);
             this.Controls.Add(this.m1);
             this.Controls.Add(this.cher);
@@ -232,6 +244,7 @@
         private System.Windows.Forms.Button cher;
         private System.Windows.Forms.Button m1;
         private System.Windows.Forms.Button count;
+        private System.Windows.Forms.Button mid;
     }
 }
 

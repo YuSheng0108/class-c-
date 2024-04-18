@@ -10,3 +10,4 @@ C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.exe
 C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.pdb
 C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.ckr.resources
 C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.text32.resources
+C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.midtest.resources
