@@ -17,6 +17,7 @@ namespace n09310012
         {
             InitializeComponent();
             this.second = 0;
+            timer1.Enabled = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,25 +25,32 @@ namespace n09310012
            
         }
 
-        private void start_Click(object sender, EventArgs e)
+
+
+        private void restart_Click(object sender, EventArgs e)
+        {
+            if (button1.Text == "Stop")
+            {
+               button1.Text = "Start";
+                timer1.Enabled = false;
+            }
+            else
+            {
+                button1.Text = "Stop";
+                timer1.Enabled = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
             int second;
             label1.Text = String.Format("{0}秒", this.second);
             this.second++;
-        }
-
-        private void restart_Click(object sender, EventArgs e)
-        {
-            if (start.Text == "Stop")
-            {
-                start.Text = "Start";
-                timer1.Enabled = true;
-            }
-            else
-            {
-                start.Text = "Stop";
-                timer1.Enabled = false;
-            }
         }
     }
 }
