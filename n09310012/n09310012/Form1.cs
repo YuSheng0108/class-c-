@@ -94,5 +94,11 @@ namespace n09310012
             Form mid = new midtest();
             mid.Show();
         }
+
+        private void timer_Click(object sender, EventArgs e)
+        {
+            Form timer = new timer();
+            timer.Show();
+        }
     }
 }

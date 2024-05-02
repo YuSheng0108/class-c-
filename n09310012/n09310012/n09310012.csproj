@@ -58,6 +58,12 @@
     <Compile Include="ckr.Designer.cs">
       <DependentUpon>ckr.cs</DependentUpon>
     </Compile>
+    <Compile Include="timer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timer.Designer.cs">
+      <DependentUpon>timer.cs</DependentUpon>
+    </Compile>
     <Compile Include="midtest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="text.resx">
       <DependentUpon>text.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timer.resx">
+      <DependentUpon>timer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

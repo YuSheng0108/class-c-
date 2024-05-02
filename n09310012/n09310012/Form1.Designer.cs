@@ -43,6 +43,7 @@
             this.m1 = new System.Windows.Forms.Button();
             this.count = new System.Windows.Forms.Button();
             this.mid = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -201,11 +202,22 @@
             this.mid.UseVisualStyleBackColor = true;
             this.mid.Click += new System.EventHandler(this.mid_Click);
             // 
+            // timer
+            // 
+            this.timer.Location = new System.Drawing.Point(587, 333);
+            this.timer.Name = "timer";
+            this.timer.Size = new System.Drawing.Size(75, 23);
+            this.timer.TabIndex = 16;
+            this.timer.Text = "timer";
+            this.timer.UseVisualStyleBackColor = true;
+            this.timer.Click += new System.EventHandler(this.timer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.timer);
             this.Controls.Add(this.mid);
             this.Controls.Add(this.count);
             this.Controls.Add(this.m1);
@@ -245,6 +257,7 @@
         private System.Windows.Forms.Button m1;
         private System.Windows.Forms.Button count;
         private System.Windows.Forms.Button mid;
+        private System.Windows.Forms.Button timer;
     }
 }
 
