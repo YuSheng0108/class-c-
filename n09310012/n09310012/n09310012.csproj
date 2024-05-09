@@ -58,6 +58,12 @@
     <Compile Include="ckr.Designer.cs">
       <DependentUpon>ckr.cs</DependentUpon>
     </Compile>
+    <Compile Include="game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="game.Designer.cs">
+      <DependentUpon>game.cs</DependentUpon>
+    </Compile>
     <Compile Include="timer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ckr.resx">
       <DependentUpon>ckr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="game.resx">
+      <DependentUpon>game.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="midtest.resx">
       <DependentUpon>midtest.cs</DependentUpon>

@@ -12,7 +12,9 @@ namespace n09310012
 {
     public partial class timer : Form
     {
-        int second;
+        public int second;
+        private object changetext;
+
         public timer()
         {
             InitializeComponent();
@@ -29,16 +31,7 @@ namespace n09310012
 
         private void restart_Click(object sender, EventArgs e)
         {
-            if (button1.Text == "Stop")
-            {
-               button1.Text = "Start";
-                timer1.Enabled = false;
-            }
-            else
-            {
-                button1.Text = "Stop";
-                timer1.Enabled = true;
-            }
+            timer1.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,9 +41,16 @@ namespace n09310012
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int second;
-            label1.Text = String.Format("{0}秒", this.second);
-            this.second++;
+            
+            label1.Text = String.Format("{0}秒", second);
+            second++;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            second = 0 ;
+            label1.Text = String.Format("{0}秒", second);
+            timer1.Enabled = false;
         }
     }
 }
