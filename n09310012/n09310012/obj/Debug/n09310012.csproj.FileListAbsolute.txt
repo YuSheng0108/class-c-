@@ -13,3 +13,4 @@ C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.text32.r
 C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.midtest.resources
 C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.timer.resources
 C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.game.resources
+C:\Users\MEGAS\Desktop\class-c-\n09310012\n09310012\obj\Debug\n09310012.checkbox.resources

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace n09310012
 {
@@ -105,6 +106,12 @@ namespace n09310012
         {
             Form button1 = new game();
             button1.Show();
+        }
+
+        private void checkbox_Click(object sender, EventArgs e)
+        {
+            Form checkbox = new checkbox();
+            checkbox.Show();
         }
     }
 }

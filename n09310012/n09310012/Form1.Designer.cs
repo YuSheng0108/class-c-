@@ -45,6 +45,7 @@
             this.mid = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.checkbox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -185,7 +186,7 @@
             // 
             // count
             // 
-            this.count.Location = new System.Drawing.Point(587, 256);
+            this.count.Location = new System.Drawing.Point(587, 205);
             this.count.Name = "count";
             this.count.Size = new System.Drawing.Size(75, 23);
             this.count.TabIndex = 14;
@@ -195,7 +196,7 @@
             // 
             // mid
             // 
-            this.mid.Location = new System.Drawing.Point(158, 352);
+            this.mid.Location = new System.Drawing.Point(19, 249);
             this.mid.Name = "mid";
             this.mid.Size = new System.Drawing.Size(121, 30);
             this.mid.TabIndex = 15;
@@ -205,7 +206,7 @@
             // 
             // timer
             // 
-            this.timer.Location = new System.Drawing.Point(587, 333);
+            this.timer.Location = new System.Drawing.Point(587, 234);
             this.timer.Name = "timer";
             this.timer.Size = new System.Drawing.Size(75, 23);
             this.timer.TabIndex = 16;
@@ -215,7 +216,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(587, 377);
+            this.button1.Location = new System.Drawing.Point(587, 263);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 17;
@@ -223,11 +224,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // checkbox
+            // 
+            this.checkbox.Location = new System.Drawing.Point(587, 293);
+            this.checkbox.Name = "checkbox";
+            this.checkbox.Size = new System.Drawing.Size(75, 23);
+            this.checkbox.TabIndex = 18;
+            this.checkbox.Text = "checkbox";
+            this.checkbox.UseVisualStyleBackColor = true;
+            this.checkbox.Click += new System.EventHandler(this.checkbox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkbox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.timer);
             this.Controls.Add(this.mid);
@@ -271,6 +283,7 @@
         private System.Windows.Forms.Button mid;
         private System.Windows.Forms.Button timer;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button checkbox;
     }
 }
 
