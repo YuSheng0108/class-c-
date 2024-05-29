@@ -17,6 +17,8 @@ namespace n09310012
             InitializeComponent();
         }
 
+        public bool Checked { get; internal set; }
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)

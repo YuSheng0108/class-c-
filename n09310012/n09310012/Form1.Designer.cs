@@ -46,6 +46,7 @@
             this.timer = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.checkbox = new System.Windows.Forms.Button();
+            this.order = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,6 +81,7 @@
             this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label2
             // 
@@ -234,11 +236,22 @@
             this.checkbox.UseVisualStyleBackColor = true;
             this.checkbox.Click += new System.EventHandler(this.checkbox_Click);
             // 
+            // order
+            // 
+            this.order.Location = new System.Drawing.Point(587, 323);
+            this.order.Name = "order";
+            this.order.Size = new System.Drawing.Size(75, 23);
+            this.order.TabIndex = 19;
+            this.order.Text = "點餐系統";
+            this.order.UseVisualStyleBackColor = true;
+            this.order.Click += new System.EventHandler(this.Order_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.order);
             this.Controls.Add(this.checkbox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.timer);
@@ -284,6 +297,7 @@
         private System.Windows.Forms.Button timer;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button checkbox;
+        private System.Windows.Forms.Button order;
     }
 }
 

@@ -113,5 +113,16 @@ namespace n09310012
             Form checkbox = new checkbox();
             checkbox.Show();
         }
+
+        private void Order_Click(object sender, EventArgs e)
+        {
+            Form Order = new order();
+            Order.Show();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
