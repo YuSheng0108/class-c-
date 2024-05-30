@@ -33,30 +33,110 @@ namespace n09310012
         private void Send_Click(object sender, EventArgs e)
         {
             DateTime currentDateTime = DateTime.Now;
-            string formattedDateTime =currentDateTime.ToString("yyyy/MM/dd HH:mm");
-            File.AppendAllText("OrderDate.csv", formattedDateTime + "," + food + "," + drink + "\n", Encoding.UTF8);
+            string formattedDateTime = currentDateTime.ToString("yyyy/MM/dd HH:mm");
 
-            MessageBox.Show("餐點:" + food + Environment.NewLine + "飲料:" + drink, "請確認餐點");
+
+
+            List<string> MenuA = new List<string>();
+            List<string> MenuB = new List<string>();
+            if (checkBox1.Checked)
+            {
+                MenuA.Add(checkBox1.Text);
+            }
+            if (checkBox2.Checked)
+            {
+                MenuA.Add(checkBox2.Text);
+            }
+            if (checkBox3.Checked)
+            {
+                MenuA.Add(checkBox3.Text);
+            }
+
+
+            if (checkBox6.Checked)
+            {
+                MenuB.Add(checkBox6.Text);
+            }
+            if (checkBox7.Checked)
+            {
+                MenuB.Add(checkBox7.Text);
+            }
+            string filePeth = @"C:\Users\MEGAS\Desktop\class-c-\OrderDate.csv";
+
+            using (StreamWriter writer = new StreamWriter(filePeth, true, Encoding.UTF8))
+            {
+                if (writer.BaseStream.Length == 0)
+                {
+                    writer.WriteLine("時間,主食,飲品");
+                }
+                foreach (var item in MenuA)
+                {
+                    writer.WriteLine($"{formattedDateTime}, 主食,{item}");
+                }
+                foreach (var item in MenuB)
+                {
+                    writer.WriteLine($"{formattedDateTime}, 飲品,{item}");
+                }
+            }
+            
+            MessageBox.Show("餐點:" + MenuA[0] + Environment.NewLine + "飲料:" + MenuB[0], "請確認餐點");
+
 
         }
 
         private void Food_Paint(object sender, PaintEventArgs e)
         {
-            foreach (Control c in food.Controls)
-            {
-                if (c is checkbox)
-                {
-                    if (((checkbox)c).Checked == true)
-                    {
-                        
-                    }
-                }
-            }
+
         }
 
         private void Drink_Paint(object sender, PaintEventArgs e)
         {
-            
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox10_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

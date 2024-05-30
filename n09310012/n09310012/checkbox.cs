@@ -24,5 +24,10 @@ namespace n09310012
             if (checkBox1.Checked)
                 MessageBox.Show(checkBox1.Text + "已被按下");
         }
+
+        private void checkbox_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

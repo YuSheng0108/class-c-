@@ -91,6 +91,7 @@ namespace n09310012
             this.checkBox2.TabIndex = 13;
             this.checkBox2.Text = "黃金炒飯";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -101,6 +102,7 @@ namespace n09310012
             this.checkBox3.TabIndex = 14;
             this.checkBox3.Text = "牛肉湯麵";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -111,6 +113,7 @@ namespace n09310012
             this.checkBox4.TabIndex = 15;
             this.checkBox4.Text = "石鍋拌飯";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -121,6 +124,7 @@ namespace n09310012
             this.checkBox5.TabIndex = 16;
             this.checkBox5.Text = "炸物拼盤";
             this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -131,6 +135,7 @@ namespace n09310012
             this.checkBox6.TabIndex = 17;
             this.checkBox6.Text = "可樂";
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -141,6 +146,7 @@ namespace n09310012
             this.checkBox7.TabIndex = 19;
             this.checkBox7.Text = "雪碧";
             this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox8
             // 
@@ -151,6 +157,7 @@ namespace n09310012
             this.checkBox8.TabIndex = 20;
             this.checkBox8.Text = "奶茶";
             this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox9
             // 
@@ -161,6 +168,7 @@ namespace n09310012
             this.checkBox9.TabIndex = 21;
             this.checkBox9.Text = "綠茶";
             this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // checkBox10
             // 
@@ -171,6 +179,7 @@ namespace n09310012
             this.checkBox10.TabIndex = 22;
             this.checkBox10.Text = "紅茶";
             this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
             // send
             // 
@@ -190,9 +199,10 @@ namespace n09310012
             this.food.Controls.Add(this.checkBox3);
             this.food.Controls.Add(this.checkBox4);
             this.food.Controls.Add(this.checkBox5);
-            this.food.Location = new System.Drawing.Point(12, 12);
+            this.food.Dock = System.Windows.Forms.DockStyle.Left;
+            this.food.Location = new System.Drawing.Point(0, 0);
             this.food.Name = "food";
-            this.food.Size = new System.Drawing.Size(277, 426);
+            this.food.Size = new System.Drawing.Size(277, 479);
             this.food.TabIndex = 24;
             this.food.Paint += new System.Windows.Forms.PaintEventHandler(this.Food_Paint);
             // 
@@ -204,25 +214,27 @@ namespace n09310012
             this.drink.Controls.Add(this.checkBox10);
             this.drink.Controls.Add(this.checkBox8);
             this.drink.Controls.Add(this.checkBox9);
-            this.drink.Location = new System.Drawing.Point(313, 12);
+            this.drink.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.drink.Location = new System.Drawing.Point(277, 0);
             this.drink.Name = "drink";
-            this.drink.Size = new System.Drawing.Size(270, 425);
+            this.drink.Size = new System.Drawing.Size(553, 479);
             this.drink.TabIndex = 25;
             this.drink.Paint += new System.Windows.Forms.PaintEventHandler(this.Drink_Paint);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.send);
-            this.panel3.Location = new System.Drawing.Point(610, 12);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(554, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(178, 425);
+            this.panel3.Size = new System.Drawing.Size(276, 479);
             this.panel3.TabIndex = 26;
             // 
             // order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(830, 479);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.drink);
             this.Controls.Add(this.food);

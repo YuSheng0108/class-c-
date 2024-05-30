@@ -50,6 +50,7 @@
             this.Controls.Add(this.checkBox1);
             this.Name = "checkbox";
             this.Text = "checkbox";
+            this.Load += new System.EventHandler(this.checkbox_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
