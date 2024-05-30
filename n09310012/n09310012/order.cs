@@ -38,7 +38,7 @@ namespace n09310012
 
 
             List<string> MenuA = new List<string>();
-            List<string> MenuB = new List<string>();
+            
             if (checkBox1.Checked)
             {
                 MenuA.Add(checkBox1.Text);
@@ -51,7 +51,16 @@ namespace n09310012
             {
                 MenuA.Add(checkBox3.Text);
             }
+            if (checkBox4.Checked)
+            {
+                MenuA.Add(checkBox4.Text);
+            }
+            if (checkBox5.Checked)
+            {
+                MenuA.Add(checkBox5.Text);
+            }
 
+            List<string> MenuB = new List<string>();
 
             if (checkBox6.Checked)
             {
@@ -61,25 +70,37 @@ namespace n09310012
             {
                 MenuB.Add(checkBox7.Text);
             }
-            string filePeth = @"C:\Users\MEGAS\Desktop\class-c-\OrderDate.csv";
+            if (checkBox8.Checked)
+            {
+                MenuB.Add(checkBox8.Text);
+            }
+            if (checkBox9.Checked)
+            {
+                MenuB.Add(checkBox9.Text);
+            }
+            if (checkBox10.Checked)
+            {
+                MenuB.Add(checkBox10.Text);
+            }
+            string filePeth = @"C:\Users\s9500\Desktop\class-c-\nOrderDate.csv";
 
             using (StreamWriter writer = new StreamWriter(filePeth, true, Encoding.UTF8))
             {
                 if (writer.BaseStream.Length == 0)
                 {
-                    writer.WriteLine("時間,主食,飲品");
+                    writer.WriteLine("時間,餐點,飲品");
                 }
-                foreach (var item in MenuA)
+                foreach (string item in MenuA)
                 {
-                    writer.WriteLine($"{formattedDateTime}, 主食,{item}");
+                    writer.WriteLine($"{formattedDateTime}, 餐點,{item},");
                 }
-                foreach (var item in MenuB)
+                foreach (string item in MenuB)
                 {
                     writer.WriteLine($"{formattedDateTime}, 飲品,{item}");
                 }
             }
             
-            MessageBox.Show("餐點:" + MenuA[0] + Environment.NewLine + "飲料:" + MenuB[0], "請確認餐點");
+            MessageBox.Show("餐點:" + MenuA[0] + Environment.NewLine  + "飲品:" + MenuB[0] , "請確認餐點");
 
 
         }
